@@ -1,0 +1,377 @@
+.navbar {
+    background-color: white;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding:0.5rem;
+}
+
+.navbar-brand {
+    font-weight: 500;
+    color:rgb(7, 156, 7);
+    font-size: 24px;
+    transition: 0.3s color;
+}
+
+
+.login-button {
+   background-color: rgb(7, 156, 7);
+   color:  white;
+   font-size: 14px;
+   padding: 8px 20px;
+   border-radius: 50px;
+   text-decoration: none;
+   transition: 0.3s background-color;
+}
+
+.login-button:hover {
+    background-color: rgb(1, 112, 1);
+}
+
+.navbar-toggler {
+    border:none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color:#666777;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active{
+    color:#000;
+}
+
+
+
+@media(min-width: 991px) {
+.nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color:rgb(27, 227, 27);
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+
+.nav-link:hover::before, .nav-link.active::before{
+    width: 100%;
+    visibility: visible;
+}
+}
+
+#carouselExampleFade .carousel-item {
+    transition: all 3s ease-in-out;
+  }
+  
+  #carouselExampleFade .carousel-item .carousel-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+  }
+  
+  #carouselExampleFade .carousel-item img {
+    object-fit: cover;
+    /* Or "contain" */
+    height: 100dvh;
+  }
+  
+  #carouselExampleFade .carousel-item .carousel-caption {
+    bottom: 30%;
+  }
+  
+  #carouselExampleFade .carousel-item .carousel-caption h1 {
+    font-size: 5.5em;
+  }
+
+  #carouselExampleFade .carousel-item .carousel-caption h2 {
+    font-size: 2.5em;
+  }
+  
+  #carouselExampleFade .carousel-item.active {
+    transform: scale(1.1);
+    /* Zoom in on active slide */
+  }
+  
+  #carouselExampleFade .carousel-item.prev,
+  #carouselExampleFade .carousel-item.next {
+    transform: scale(0.9);
+    /* Shrink inactive slides */
+  }
+
+  .bg-holder{
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    top:0;
+    left:0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+
+  /***************login*********************/
+  .wrapper{
+    /* background-color: #eceece;  */
+   padding: 0 20px 0 20px;
+   
+  
+}
+
+.main{
+   display:flex ;
+   justify-content: center;
+   align-items: center;
+   /* min-height: 100vh; */
+   /* box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.2); */
+
+}
+/* .side-image{
+   background-image: url('img\view-from-view-point-5 new.jpg');
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   position: absolute;
+   border-radius: 10px 0 0 10px;
+} */
+
+.side-image {
+   position: relative;
+   border-radius: 10px 0 0 10px;
+   /* overflow: hidden;
+   box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.2x); */
+
+}
+
+.side-image::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 90%;
+   background-image: url('img/view-from-view-point-5 new.jpg');
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   z-index: -1; /* Ensure the background stays behind content */
+   }
+
+
+img{
+
+   width:435px;
+   top:930px;
+   left:930px;
+   border-radius: 10px;
+   background: #fff;
+   
+}
+
+.row{
+   width: 900px;
+   height:550px;
+   
+
+}
+
+
+
+.image-container {
+   position: relative;
+   display: inline-block;
+   /* border-radius: 10px 0 0 10px; /* Apply border radius to the left side */
+  overflow: hidden; */
+}
+
+.image-container img {
+   display: block;
+   width: 100%;
+   height: auto;
+}
+
+.image-container .text {
+   position: absolute;
+   bottom: 50%; /* Adjust as needed */
+   left: 50%; /* Adjust as needed */
+   right: 50%;
+   top:50%;
+   color: white; /* Text color */
+   font-size: 24px; /* Text size */
+  /* background-color: rgba(0, 0, 0, 0.5);  Background color with transparency */
+   padding: 10px; /* Padding around the text */
+   align-items: center;
+}
+.right{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+.input-box{
+   width: 330px;
+   box-sizing: border-box;
+}
+.input-box header{
+   font-family: 700;
+   text-align: center;
+   margin-bottom: 45px;
+}
+
+.input-field{
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   padding: 0 10px 0 10px;
+}
+.input{
+   height: 45px;
+   width: 100%;
+   background: transparent;
+   border: none;
+   border-bottom: 1px solid rgba(0,0,0,0.2);
+   outline: none;
+   margin-bottom: 20px;
+   color: #40414a;
+}
+
+.input-box .input-field label {
+   position: absolute;
+   top:10px;
+   left:10px;
+   pointer-events: none;
+   transition: .5s;
+}
+
+.input-field .input:focus ~ label{
+   top: -10px;
+   font-size: 13px;
+}
+
+.input-field .input:valid ~ label{
+   top: -10px;
+   font-size: 13px;
+   color: rgb(12, 204, 12);
+
+}
+.input-field .input:focus, .input-field .input:valid{
+   border-bottom: 1px solid rgb(5, 139, 11);
+}
+
+.submit{
+   border: none;
+   outline: none;
+   height: 45px;
+   background: #ececec;
+   border-radius: 5px;
+   transition: .4s;
+}
+.submit:hover{
+   background: rgba(5, 157, 73, 0.9);
+   color: #fff;
+
+}
+.signin{
+   text-align: center;
+   font-size: small;
+   margin-top: 20px;
+}
+
+span a {
+   text-decoration: none;
+   font-weight: 700;
+   color: black;
+   transition: .5s;
+}
+
+span a:hover{
+   text-decoration: underline;
+   color: black;
+}
+
+
+
+/**********roomlisting style*****************/
+
+
+
+.container {
+   max-width: 800px;
+   margin: 0 auto;
+   padding: 20px;
+}
+
+
+
+.form-group {
+   margin-bottom: 20px;
+   width: 330px;
+   box-sizing: border-box;
+
+}
+
+
+/* Center the button */
+.btn-primary {
+   display: block;
+   margin: 0 auto;
+}
+
+
+   
+.form-group header{
+   font-family: 700;
+   text-align: center;
+   margin-bottom: 45px;
+}
+label {
+   display: block;
+   font-weight: bold;
+ }
+ 
+ input[type=date],
+ select {
+   width: 100%;
+   padding: 8px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+ }
+ 
+ 
+
+ .btn-custom {
+   display: block;
+   width: 100%;
+   padding: 10px;
+   background-color: rgb(5, 139, 11); /* Change to your desired color */
+   border-color: rgb(5, 139, 11); /* Change to match the background color or customize border color separately */
+}
+
+
+
+
+.rating .bi-star-fill,
+   .rating .bi-star {
+       color: #f4f41f; /* Change to your desired color */
+   }
+
+
+
+   .card:hover {
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow on hover */
+       transform: translateY(-20px); /* Move the card slightly up on hover */
+   }
