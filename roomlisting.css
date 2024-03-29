@@ -1,0 +1,141 @@
+/* Custom CSS for Hotel Booking Form */
+
+.navbar {
+    background-color: white;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding:0.5rem;
+}
+
+.navbar-brand {
+    font-weight: 500;
+    color:rgb(7, 156, 7);
+    font-size: 24px;
+    transition: 0.3s color;
+}
+
+
+.login-button {
+   background-color: rgb(7, 156, 7);
+   color:  white;
+   font-size: 14px;
+   padding: 8px 20px;
+   border-radius: 50px;
+   text-decoration: none;
+   transition: 0.3s background-color;
+}
+
+.login-button:hover {
+    background-color: rgb(1, 112, 1);
+}
+
+.navbar-toggler {
+    border:none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color:#666777;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active{
+    color:#000;
+}
+
+
+
+@media(min-width: 991px) {
+.nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color:rgb(27, 227, 27);
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+
+.nav-link:hover::before, .nav-link.active::before{
+    width: 100%;
+    visibility: visible;
+}
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+.form-group {
+    margin-bottom: 20px;
+    width: 330px;
+    box-sizing: border-box;
+
+}
+
+
+/* Center the button */
+.btn-primary {
+    display: block;
+    margin: 0 auto;
+}
+
+
+    
+.form-group header{
+    font-family: 700;
+    text-align: center;
+    margin-bottom: 45px;
+}
+label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type=date],
+  select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  
+
+  .btn-custom {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(5, 139, 11); /* Change to your desired color */
+    border-color: rgb(5, 139, 11); /* Change to match the background color or customize border color separately */
+}
+
+
+
+
+.rating .bi-star-fill,
+    .rating .bi-star {
+        color: #f4f41f; /* Change to your desired color */
+    }
+
+
+
+    .card:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow on hover */
+        transform: translateY(-20px); /* Move the card slightly up on hover */
+    }
