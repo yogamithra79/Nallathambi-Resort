@@ -67,7 +67,7 @@
 
 .nav-link:hover::before, .nav-link.active::before{
     width: 100%;
-    visibility: visible;
+    visibility: visible; 
 }
 }
 
@@ -182,12 +182,12 @@ img{
    
 }
 
-.row{
+/* .row{
    width: 900px;
    height:550px;
    
 
-}
+} */
 
 
 
