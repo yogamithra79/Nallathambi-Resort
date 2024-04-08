@@ -310,7 +310,7 @@ span a:hover{
 
 
 .container {
-   max-width: 800px;
+   max-width: 1200px;
    margin: 0 auto;
    padding: 20px;
 }
@@ -375,3 +375,68 @@ label {
        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow on hover */
        transform: translateY(-20px); /* Move the card slightly up on hover */
    }
+
+
+   /* banner */
+   .banner {
+      background-image: url('img/boat-house-lake-new.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 350px; /* Adjust this height as needed */
+      background-color: rgba(0, 0, 0, 0.5);
+      position: relative;
+    }
+    .explore-text {
+      font-family: 'Lucida Calligraphy', cursive; /* Specify the desired calligraphy font */
+      font-size:50px; /* Adjust the font size as needed */
+      color: white; /* Set the text color */
+      position: absolute;
+      bottom: 10px; /* Position the text at the bottom */
+      right: 300px; /* Position the text at the right */
+      font-weight: bolder;
+  }
+    
+  /* tourist place */
+  .card {
+   border: none; /* Remove border from cards */
+   position: relative;
+}
+
+.card:hover .overlay {
+   opacity: 1; /* Show overlay on hover */
+   background: rgba(0, 0, 0, 0.5);
+}
+
+.overlay {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+   opacity: 1; /* Initially hidden */
+   transition: opacity 0.5s; /* Fade effect */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.card-img-overlay {
+   position: absolute;
+   bottom: 100;
+   left:90;
+   padding: 10px; /* Add padding for better readability */
+   
+}
+
+.card-title {
+   color: white;
+   font-size: 18px; /* Adjust font size as needed */
+   
+}
+.text {
+   color: white;
+   font-size: 24px;
+}
+.card-img-overlay:hover{
+   background: rgba(0, 0, 0, 0.3);  
+}
